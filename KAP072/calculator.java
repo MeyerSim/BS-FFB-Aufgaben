@@ -2,7 +2,7 @@ package Java.uebung20240307;
 
 public class calculator {
 
-    final static int MAX_ITERATION = 24;
+    private final static int MAX_ITERATION = 24;
     
     public static void main(String[] Args){
         //variables
