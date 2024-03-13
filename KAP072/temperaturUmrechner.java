@@ -76,7 +76,7 @@ public class temperaturUmrechner {
         }
 
         System.out.println("\nEingebe:\t"+t_in+" "+unitIn);
-        System.out.println("Ausgabe:\t"+t_out+" "+unitOut);
+        System.out.println("Ausgabe:\t"+t_out+" "+unitOut+"\n");
         in.close();
     }
 
