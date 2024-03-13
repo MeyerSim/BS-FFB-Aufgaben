@@ -240,6 +240,9 @@ public class Blatt08 {
         //variables
         boolean pw_geknackt = false;
 
+        //Wechel Aufgabe haben wir?
+        System.out.println("\nAuftrag 9");
+
         //try password
         while(pw_geknackt == false){
             int guess = in.nextInt();
