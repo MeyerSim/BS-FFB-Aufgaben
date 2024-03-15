@@ -1,6 +1,6 @@
 public class schulaufgabeA5 {
 
-    public static void main(String Args[]){
+    public static void main(String[] Args){
 
         double t_ist = t_sensor();      //Aktuelle Temperatur
         double lf_ist = lf_sensor();    //Aktuelle Luftfeuchtigkeit
