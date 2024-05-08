@@ -28,6 +28,23 @@ public class Blatt09 {
         }
     }
 
+    //auftrag 1b
+    private static void auftrag1b(Scanner in){
+        //variables
+        String[] dresser = {"red", "green", "blue", "grey", "pink", "black", "white"};
+        String[] weekday = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+        int idx;
+        boolean valid_input = false;
+
+        //print socks
+        do{
+            System.out.println();
+            idx = Arrays.asList(weekday).indexOf(in.nextLine());
+            if(idx!=-1)valid_input = true;
+        }while(valid_input=false);
+        System.out.println("Today's socks are "+dresser[idx]);
+    }
+
     //auftrag 2
     public static void auftrag2(){
         //variables
