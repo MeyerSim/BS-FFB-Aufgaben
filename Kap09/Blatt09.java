@@ -63,10 +63,17 @@ public class Blatt09 {
         //Auftrags-Durchsage
         System.out.println("\nAuftrag 3\n");
 
-        //Ausgabe per for-loop
+        //Ausgabe for-loop
         System.out.println("for-loop\nFaecher: ");
         for(int i = 0; i<faecher.length; i++){
             System.out.print(faecher[i]+" ");
+        }
+        System.out.println("\n");
+
+        //Ausgabe for-loop invers
+        System.out.println("for-loop invers\nFaecher: ");
+        for(int i = faecher.length; i>0; i--){
+            System.out.print(faecher[i-1]+" ");
         }
         System.out.println("\n");
 
@@ -76,5 +83,38 @@ public class Blatt09 {
             System.out.print(i+" ");
         }
         System.out.print("\n");
+    }
+
+    //auftrag 4
+    private static void auftrag4(){
+        //variables
+        int[] grades = {1, 1, 1, 2, 1, 2};
+        double average = 0;
+        int min = 0;
+        int max = 0;
+
+        //Auftrags-Durchsage
+        System.out.println("\nAuftrag 4\n");
+
+        //print grades
+        System.out.println("Grades: ");
+        for(int i:grades){
+            System.out.print(i+" ");
+        }
+        System.out.println("\n");
+
+        //print average
+        for(int i:grades){
+            average += i;
+        }
+        average /= 6;
+        System.out.println("Average grade: "+average);
+
+        //print min and max
+        for(int i:grades){
+            if(min==0||i<min)min=i;
+            if(max==0||i>max)max=i;
+        }
+        System.out.println("min: "+min+"\nmax: "+max);
     }
 }
