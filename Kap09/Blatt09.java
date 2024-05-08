@@ -5,12 +5,18 @@ import java.util.Arrays;
 public class Blatt09 {
     public static void main(String[] args){
         //variables
+        Scanner in = new Scanner(System.in);
 
         //aufträge
         auftrag1();
+        auftrag1b(in);
         auftrag2();
         auftrag3();
+        auftrag4();
         System.out.println("");
+
+        //close Scanner
+        in.close();
     }
 
     //auftrag 1
