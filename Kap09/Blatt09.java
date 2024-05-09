@@ -20,7 +20,7 @@ public class Blatt09 {
     }
 
     //auftrag 1
-    public static void auftrag1(){
+    private static void auftrag1(){
         //variables
         String[] dresser = {"red", "green", "blue", "grey", "pink", "black", "white"};
         String[] weekday = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
