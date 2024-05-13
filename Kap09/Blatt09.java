@@ -42,11 +42,19 @@ public class Blatt09 {
         int idx;
         boolean valid_input = false;
 
+        //Auftrags-Durchsage
+        System.out.println("\nAuftrag 1b\n");
+
         //print socks
         do{
             System.out.println();
             idx = Arrays.asList(weekday).indexOf(in.nextLine());
-            if(idx!=-1)valid_input = true;
+            if(idx!=-1){
+                valid_input = true;
+            }else{
+                System.out.println("Invalid input!\nPlease try again.");
+                valid_input = false;
+            }
         }while(valid_input=false);
         System.out.println("Today's socks are "+dresser[idx]);
     }
