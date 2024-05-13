@@ -53,9 +53,8 @@ public class Blatt09 {
                 valid_input = true;
             }else{
                 System.out.println("Invalid input!\nPlease try again.");
-                valid_input = false;
             }
-        }while(valid_input=false);
+        }while(valid_input==false);
         System.out.println("Today's socks are "+dresser[idx]);
     }
 
