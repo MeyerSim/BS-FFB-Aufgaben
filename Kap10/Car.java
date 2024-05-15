@@ -48,7 +48,10 @@ public class Car {
     }
 
     //Constructor for specific car
-    public Car(String brand, String model, String engine_type, String color, short bhp, double fuel_tank_size, double fuel_consumption, byte seats, boolean convertible, boolean android_carplay, short year_of_construction, short first_registration, String license_plate){
+    public Car(String brand, String model, String engine_type, String color,
+                short bhp, double fuel_tank_size, double fuel_consumption,
+                byte seats, boolean convertible, boolean android_carplay,
+                short year_of_construction, short first_registration, String license_plate){
         //set general attributes
         this.brand = brand;
         this.model = model;
@@ -74,15 +77,23 @@ public class Car {
     //give self-information
     public void printSelfInformation(){
         //print general
-        System.out.println("\n//General information\nBrand: "+this.brand+"\nModel: "+this.model+"Engine type: "+this.engine_type+"\nColor: "+this.color);
+        System.out.println("\n//General information\nBrand: "+this.brand+"\nModel: "+
+                            this.model+"Engine type: "+this.engine_type+"\nColor: "+this.color);
 
         //print performance
-        System.out.print("\nPerformance\nbhp: "+this.bhp+"\nkW: "+this.kW+"\nFuel tank size: "+this.fuel_tank_size);
+        System.out.print("\n//Performance\nbhp: "+this.bhp+"\nkW: "+this.kW+"\nFuel tank size: "+this.fuel_tank_size);
         if(!this.engine_type.equals("ev")){
             System.out.println("l\nFuel consumption: "+this.fuel_consumption+"l/100km");
         }else{
             System.out.println("kWh\nFuel consumption: "+this.fuel_consumption+"kWh/100km");
         }
+
+        //print interior
+        System.out.println("\n//Interior and Infotainment\nSeats: "+this.seats+"\nConvertible: "+this.convertible+
+        "\nInfotainment with Android-Auto / Apple-Car-Play: "+this.android_carplay);
+        //print legal
+        System.out.println("\n//Legal information\nYear of construction: "+this.year_of_construction+
+        "\nYear of first registration: "+this.first_registration+"\nLicense plate: "+this.license_plate);
     }
 
     //calculate consumed fuel
@@ -188,7 +199,7 @@ public class Car {
     }
     */
 
-    //set engine type
+    //set engine_type
     /*
     private void setModel(String engine_type){
         this.engine_type = engine_type;
@@ -203,8 +214,8 @@ public class Car {
     */
 
     //set bhp
-    public void setBhp(short bhp){
-        this.bhp = bhp;
+    public void setBhp(int bhp){
+        this.bhp = (short)bhp;
         this.kW = this.bhp * 0.735499;
     }
 
@@ -212,5 +223,59 @@ public class Car {
     public void setKW(double kW){
         this.kW = kW;
         this.bhp = (short)(this.kW * 1.35962115516);
+    }
+
+    //set fuel_tank_size
+    /*
+    private void setFuelTankSize(double size){
+        this.fuel_tank_size = size;
+    }
+    */
+
+    //set fuel_consumption
+    /*
+    private void setFuelTankSize(double consumption){
+        this.fuel_consumption = consumption;
+    }
+    */
+
+    //set seats
+    /*
+    private void setSeats(int seats){
+        this.seats = seats;
+    }
+    */
+
+    //set convertible
+    /*
+    private void setConvertible(boolean convertible){
+        this.convertible = convertible;
+    }
+    */
+
+    //set android_carplay
+    /*
+    private void setAndroidCarplay(boolean android_carplay){
+        this.android_carplay = android_carplay;
+    }
+    */
+
+    //set year_of_construction
+    /*
+    private void setYearOfConstruction(int year){
+        this.year_of_construction = (short)year;
+    }
+    */
+
+    //set first_registration
+    /*
+    private void setFirstRegistration(int year){
+        this.first_registration = (short)year;
+    }
+    */
+
+    //set license_plate
+    public void setLicensePlate(String plate){
+        this.license_plate = plate;
     }
 }
