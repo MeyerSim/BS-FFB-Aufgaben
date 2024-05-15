@@ -9,7 +9,7 @@ public class Blatt10 {
         Scanner in = new Scanner(System.in);
 
         //aufträge
-        auftrag1Alpha();
+        auftrag0();
         auftrag1();
 
         //lower spacer
@@ -19,8 +19,8 @@ public class Blatt10 {
         in.close();
     }
 
-    //auftrag 1-alpha
-    private static void auftrag1Alpha(){
+    //auftrag 0
+    private static void auftrag0(){
         //varibales
         Car passat = new Car();
         Car giulia = new Car("Alfa Romeo", "Giulia (Veloce)", "combustion", "red",
@@ -28,7 +28,7 @@ public class Blatt10 {
                              (short)2018, (short)2018, "LL VS 3333");
         
         //Auftrag-Durchsage
-        System.out.println("\nAuftrag1-alpha\n");
+        System.out.println("\nAuftrag 0\n");
 
         //Print Passat engine power
         System.out.println(passat.getModel()+" engine power = "+passat.getBhp()+"bhp or "+passat.getKW()+"kW\n");
