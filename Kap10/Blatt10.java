@@ -23,7 +23,9 @@ public class Blatt10 {
     private static void auftrag1Alpha(){
         //varibales
         Car passat = new Car();
-        Car giulia = new Car("Alfa Romeo", "Giulia (Veloce)", "combustion", "red", (short)280, 55, 7.8, (byte)4, false, true, (short)2018, (short)2018, "LL VS 3333");
+        Car giulia = new Car("Alfa Romeo", "Giulia (Veloce)", "combustion", "red",
+                             (short)280, 55, 7.8, (byte)4, false, true,
+                             (short)2018, (short)2018, "LL VS 3333");
         
         //Auftrag-Durchsage
         System.out.println("\nAuftrag1-alpha\n");
@@ -41,7 +43,9 @@ public class Blatt10 {
     private static void auftrag1(){
         //variable
         Car passat = new Car();
-        Car alfa_4c = new Car("Alfa Romeo", "4C", "combustion", "red", (short)380, 60, 9.8, (byte)2, true, false, (short)2015, (short)2016, "STA MS 2016");
+        Car alfa_4c = new Car("Alfa Romeo", "4C", "combustion", "red",
+                              (short)380, 60, 9.8,
+                              (byte)2, true, false, (short)2015, (short)2016, "STA MS 2016");
         int year = 2024;
 
         //Auftrag-Durchsage
