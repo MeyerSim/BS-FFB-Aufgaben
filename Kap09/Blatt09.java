@@ -50,16 +50,20 @@ public class Blatt09 {
         System.out.println("\nAuftrag 1b\n");
 
         //print socks
-        do{
-            System.out.println();
-            idx = Arrays.asList(weekday).indexOf(in.nextLine());
-            if(idx!=-1){
-                valid_input = true;
-            }else{
-                System.out.println("Invalid input!\nPlease try again.");
-            }
-        }while(valid_input==false);
-        System.out.println("Today's socks are "+dresser[idx]);
+        if(dresser.length == weekday.length){
+            do{
+                System.out.println("Please enter your current day: ");
+                System.out.println();
+                idx = Arrays.asList(weekday).indexOf(in.nextLine());
+                if(idx!=-1){
+                    valid_input = true;
+                }else{
+                    System.out.println("Invalid input!\nPlease try again.");
+                }
+            }while(valid_input==false);
+            System.out.println("Today's socks are "+dresser[idx]);
+        }else{
+            System.out.println("Missmatch in Array length");
     }
 
     //auftrag 2
