@@ -8,7 +8,7 @@ public class Car {
     private String brand = "";              //brand name
     private String model = "";              //modle deaignation
     private String engine_type = "";        //cobustion, hydrogen, ev
-    private String color = "";              //color - red, green, blue, black, white, yellow
+    private String color = "";              //color - red, green, blue, black, white, yellow, etc.
     //performance
     private short bhp = 0;                  //engine power in BreakHorsePower
     private double kW = 0;                  //engine power in KiloWatts
@@ -83,6 +83,21 @@ public class Car {
         }else{
             System.out.println("kWh\nFuel consumption: "+this.fuel_consumption+"kWh/100km");
         }
+    }
+
+    //calculate consumed fuel
+    public double consumedFuel(double km){
+        return (km/100)*(fuel_consumption);
+    }
+
+    //honk horn
+    public void horn(){
+        System.out.println("Meeep Meeep");
+    }
+
+    //calculate age
+    public int age(int year){
+        return year - this.year_of_construction;
     }
 
     //get-methods

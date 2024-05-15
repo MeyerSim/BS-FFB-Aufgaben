@@ -42,6 +42,7 @@ public class Blatt10 {
         //variable
         Car passat = new Car();
         Car alfa_4c = new Car("Alfa Romeo", "4C", "combustion", "red", (short)380, 60, 9.8, (byte)2, true, false, (short)2015, (short)2016, "STA MS 2016");
+        int year = 2024;
 
         //Auftrag-Durchsage
         System.out.println("\nAuftrag1\n");
@@ -49,5 +50,7 @@ public class Blatt10 {
         //print year of construction
         System.out.println(passat.getBrand()+" - "+passat.getModel()+"\nYear of Construction: "+passat.getYearOfConstruction());
         System.out.println(alfa_4c.getBrand()+" - "+alfa_4c.getModel()+"\nYear of Construction: "+alfa_4c.getYearOfConstruction());
+        //print age of alfa_4c
+        System.out.println("\n"+alfa_4c.getBrand()+" - "+alfa_4c.getModel()+"\nis "+alfa_4c.age(year)+" years old as of "+year);
     }
 }
