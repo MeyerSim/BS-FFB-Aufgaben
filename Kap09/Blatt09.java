@@ -29,8 +29,12 @@ public class Blatt09 {
         System.out.println("\nAuftrag 1\n");
 
         //print out
-        for(String i : weekday){
-            System.out.println("On "+i+" I wear "+dresser[Arrays.asList(weekday).indexOf(i)]+" socks.");
+        if(dresser.length == weekday.length){
+            for(String i : weekday){
+                System.out.println("On "+i+" I wear "+dresser[Arrays.asList(weekday).indexOf(i)]+" socks.");
+            }
+        }else{
+            System.out.println("missmatched array size");
         }
     }
 
