@@ -21,9 +21,10 @@ public class Car {
     //legal information
     private short year_of_construction = 0; //year the car was built
     private short first_registration = 0;   //year the car was first registered
+    private short last_main_inspection = 0; //year the last main inspection was conducted
     private String license_plate = "";      //license plate of vehicle
 
-    //Constrctors
+    //Constructors
 
     //Constructor for default car(VW - Passat)
     public Car(){
@@ -44,6 +45,7 @@ public class Car {
         //set legal information
         this.year_of_construction = 2019;
         this.first_registration = 2019;
+        this.last_main_inspection = 2022;
         this.license_plate = "GAP GA 232";
     }
 
@@ -51,7 +53,7 @@ public class Car {
     public Car(String brand, String model, String engine_type, String color,
                 short bhp, double fuel_tank_size, double fuel_consumption,
                 byte seats, boolean convertible, boolean android_carplay,
-                short year_of_construction, short first_registration, String license_plate){
+                short year_of_construction, short first_registration,short last_main_inspection, String license_plate){
         //set general attributes
         this.brand = brand;
         this.model = model;
@@ -69,12 +71,13 @@ public class Car {
         //set legal information
         this.year_of_construction = year_of_construction;
         this.first_registration = first_registration;
+        this.last_main_inspection = last_main_inspection;
         this.license_plate = license_plate;
     }
 
     //Methods
 
-    //give self-information
+    //print self-information
     public void printSelfInformation(){
         //print general
         System.out.println("\n//General information\nBrand: "+this.brand+"\nModel: "+
@@ -93,12 +96,13 @@ public class Car {
         "\nInfotainment with Android-Auto / Apple-Car-Play: "+this.android_carplay);
         //print legal
         System.out.println("\n//Legal information\nYear of construction: "+this.year_of_construction+
-        "\nYear of first registration: "+this.first_registration+"\nLicense plate: "+this.license_plate);
+        "\nYear of first registration: "+this.first_registration+"\nYear of last main inspection: "+
+        this.last_main_inspection+"\nLicense plate: "+this.license_plate);
     }
 
     //calculate consumed fuel
     public double consumedFuel(double km){
-        return (km/100)*(fuel_consumption);
+        return (km/100)*this.fuel_consumption;
     }
 
     //honk horn
@@ -178,6 +182,11 @@ public class Car {
         return this.first_registration;
     }
 
+    //get last main inspection
+    public short last_main_inspection(){
+        return this.last_main_inspection;
+    }
+
     //get license plate
     public String getLiecensePlate(){
         return this.license_plate;
@@ -254,11 +263,9 @@ public class Car {
     */
 
     //set android_carplay
-    /*
-    private void setAndroidCarplay(boolean android_carplay){
+    public void setAndroidCarplay(boolean android_carplay){
         this.android_carplay = android_carplay;
     }
-    */
 
     //set year_of_construction
     /*
@@ -273,6 +280,11 @@ public class Car {
         this.first_registration = (short)year;
     }
     */
+
+    //set last main inspection
+    public void setLastMainInspection(int year){
+        this.last_main_inspection = (short)year;
+    }
 
     //set license_plate
     public void setLicensePlate(String plate){
