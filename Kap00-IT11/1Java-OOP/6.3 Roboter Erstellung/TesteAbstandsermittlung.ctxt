@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TesteAbstandsermittlung
+comment0.text=\n\ The\ test\ class\ TesteAbstandsermittlung.\n\n\ @author\ \ (Bichler)\n\ @version\ (Nov\ 2019)\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment2.params=
+comment2.target=void\ testdistFromOrigin()
+comment3.params=
+comment3.target=void\ testdistFrom()
+comment4.params=
+comment4.target=void\ testmeetRoboter()
+numComments=5

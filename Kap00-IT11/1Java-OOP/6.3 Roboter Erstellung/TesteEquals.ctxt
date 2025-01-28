@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=TesteEquals
+comment0.text=\n\ The\ test\ class\ TesteEquals.\n\n\ @author\ \ (Bichler)\n\ @version\ (Nov\ 2019)\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\n\ Sets\ up\ the\ test\ fixture.\n\n\ Called\ before\ every\ test\ case\ method.\n
+comment2.params=
+comment2.target=void\ testAbstandVomUrsprung()
+comment3.params=
+comment3.target=void\ testDistanz()
+comment4.params=
+comment4.target=void\ testTrifft()
+comment5.params=
+comment5.target=void\ testEquals()
+comment6.params=
+comment6.target=void\ testStehtUeber()
+comment7.params=
+comment7.target=void\ testStehtUnter()
+comment8.params=
+comment8.target=void\ testStehtRechtsVon()
+comment9.params=
+comment9.target=void\ testStehtLinksVon()
+numComments=10
